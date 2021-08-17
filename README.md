@@ -43,40 +43,60 @@
 ### dtype=np.half
 * ERROR: ARRAY TYPE FLOAT16 UNSUPPORTED IN LINALG
 ### dtype=np.single
-![](/Graf_Caso1_Single)
-![](/Graf_Caso1_Single_Tiempo)
+
+![](/Graf_Caso1_Single.png)
+![](/Graf_Caso1_Single_Tiempo.png)
+
 ### dtype=np.double
-![](/Graf_Caso1_Double)
-![](/Graf_Caso1_Double_Tiempo)
+
+![](/Graf_Caso1_Double.png)
+![](/Graf_Caso1_Double_Tiempo.png)
+
 ### dtype=np.longdouble
 * ERROR: ARRAY TYPE FLOAT64 UNSUPPORTED IN LINALG
 
 ## Caso 2: scipy.linalg.inv(overwrite_a=False)
 ### dtype=np.half
-![](/Graf_Caso2_Half)
-![](/Graf_Caso2_Half_Tiempo)
+
+![](/Graf_Caso2_Half.png)
+![](/Graf_Caso2_Half_Tiempo.png)
+
 ### dtype=np.single
-![](/Graf_Caso2_Single)
-![](/Graf_Caso2_Single_Tiempo)
+
+![](/Graf_Caso2_Single.png)
+![](/Graf_Caso2_Single_Tiempo.png)
+
 ### dtype=np.double
-![](/Graf_Caso2_Double)
-![](/Graf_Caso2_Double_Tiempo)
+
+![](/Graf_Caso2_Double.png)
+![](/Graf_Caso2_Double_Tiempo.png)
+
 ### dtype=np.longdouble
-![](/Graf_Caso2_LongDouble)
-![](/Graf_Caso2_Longdouble_Tiempo)
+
+![](/Graf_Caso2_LongDouble.png)
+![](/Graf_Caso2_Longdouble_Tiempo.png)
+
 ## Caso 3: scipy.linalg.inv(overwrite_a=True)
+
 ### dtype=np.half
-![](/Graf_Caso3_Half)
-![](/Graf_Caso3_Half_Tiempo)
+
+![](/Graf_Caso3_Half.png)
+![](/Graf_Caso3_Half_Tiempo.png)
+
 ### dtype=np.single
-![](/Graf_Caso3_Double)
-![](/Graf_Caso3_Double_Tiempo)
+
+![](/Graf_Caso3_Double.png)
+![](/Graf_Caso3_Double_Tiempo.png)
+
 ### dtype=np.double
-![](/Graf_Caso3_Double)
-![](/Graf_Caso3_Double_Tiempo)
+
+![](/Graf_Caso3_Double.png)
+![](/Graf_Caso3_Double_Tiempo.png)
+
 ### dtype=np.longdouble
-![](/Graf_Caso3_Longdouble)
-![](/Graf_Caso3_LongDouble_Tiempo)
+
+![](/Graf_Caso3_Longdouble.png)
+![](/Graf_Caso3_LongDouble_Tiempo.png)
 
 * Es evidente y comprobable que en los 4 tipos de datos: Half, single, double y 
   longdouble hay diferencias en cuanto a la precisión de números, siendo half el menos
