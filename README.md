@@ -98,23 +98,14 @@
 ![](/Graf_Caso3_Longdouble.png)
 ![](/Graf_Caso3_LongDouble_Tiempo.png)
 
-* Es evidente y comprobable que en los 4 tipos de datos: Half, single, double y 
-  longdouble hay diferencias en cuanto a la precisión de números, siendo half el menos
-  preciso, aguantando números no tan extensos, y longdouble el más preciso. Con esa 
-  lógica, se observa un proporcionalidad en cuanto a un mayor tiempo de procesamiento 
-  en los tipos de datos más precisos y un menor tiempo en los menos precisos. Por 
-  ejemplo, en el caso 3 se observó que para matrices (10.000 x 10.000), el dtype=np.half
-  demoró 39,218 (s) en calcular la inversa, en cambio el dtype=np.longdouble, demoró
-  58,675 (s) y los 2 ocuparon 1,6 GB se memoria.Esre tipo de ejemplos se repitio, por lo
-  que es posible inferir que +precision = +tiempo pero no necesariamente +memoria.
-* ¿Qué algoritmo de inversión cree que utiliza cada método?
-   Se utiliza la solución analítica, de la regla de Cramer y teorema de Laplace, que
-   basa el calculo del determinante de matrices grandes en la descomposición de sumas 
-   de matrices más pequeñas. 
+* Los 4 tipos de datos: Half, single, double y 
+  longdouble Difieren en cuanto a la precisión de números, siendo half el menos
+  preciso, aguantando números no tan extensos, y longdouble el más preciso. Siguiendo esta informacion, se puede notar en los graficos que al aumentar la "calidad" de los numeros la memoria utilizada va a ser mayor al igual que el tiempo que toma el computador en procesar las operaciones. Podria ser util usar numeros mas extensos cuando es de suma importancia que la precision sea optima. 
+* ¿Qué algoritmo de inversión cree que utiliza cada método? 
+   Se utiliza la solución analítica, teorema de Laplace y regla de Cramer.   
 * ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño 
   en cada caso? El paralelismo es una funcionalidad que permite realizar operaciones
   simultaneamente y buscar información en los distintos niveles de cachés del procesador,
-  en mi caso tengo 3 niveles: L1: 384 KB, L2: 2 MB, L3: 4 MB, que se muestran en los 
-  gráficos con lineas horizontales negras. Estas permiten regular la eficiencia con la 
-  que se opera, las de menor memoria operan más rápido, como la caché 3.
+  en mi caso tengo 3 niveles: L1: 256 KB, L2: 1 MB, L3: 8 MB. Estas permiten regular la eficiencia con la 
+  que se opera, las de menor memoria operan más rápido.
 
