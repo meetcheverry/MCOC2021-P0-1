@@ -37,6 +37,7 @@
 * Dirección IP (Externa, del ISP): 181.43.140.65
 * Proveedor de internet: Entel
 
+# Entrega 3
 # Desempeño INV(A)
 
 ## Caso 1: numpy.linalg.inv()
@@ -109,3 +110,9 @@
   en mi caso tengo 3 niveles: L1: 256 KB, L2: 1 MB, L3: 8 MB. Estas permiten regular la eficiencia con la 
   que se opera, las de menor memoria operan más rápido.
 
+
+# Entrega 4
+
+### Graficos comparativos con distintos metodos utilizando tipo de datos: Double
+
+![](/entrega 4/Grafico_solve_Double_1.png)
