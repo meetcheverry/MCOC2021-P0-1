@@ -114,5 +114,5 @@
 # Entrega 4
 
 ### Graficos comparativos con distintos metodos utilizando tipo de datos: Double
-
+![](/Entrega%204/Grafico_solve_Double_1.png)
 ![](/Entrega%204/Grafico_Eigh_Double_1.png)
