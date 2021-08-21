@@ -115,4 +115,4 @@
 
 ### Graficos comparativos con distintos metodos utilizando tipo de datos: Double
 
-![](meetcheverry/MCOC2021-P0-1/blob/main/Entrega%204/Grafico_Eigh_Double_1.png)
+![](/Entrega%204/Grafico_Eigh_Double_1.png)
