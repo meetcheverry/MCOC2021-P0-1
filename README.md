@@ -114,9 +114,14 @@
 # Entrega 4
 
 ### Graficos comparativos con distintos metodos utilizando tipo de datos: Double
-![](/Entrega%204/Grafico_solve_Double_1.png)
+![](/Entrega%204/Grafico_solve_Double_2.png)
 ![](/Entrega%204/Grafico_Eigh_Double_1.png)
 
 ### Graficos comparativos con distintos metodos utilizando tipo de datos: Single
-![](/Entrega%204/Grafico_Solve_single_1.png)
+![](/Entrega%204/Grafico_Solve_single_2.png)
 ![](/Entrega%204/Grafico_Eigh_single_1.png)
+
+
+###Comentarios Ax=b 
+El caso mas lento para resolver este problemas sin dudas es de invertir la matriz y luego multiplicar, mientras mayor sean las matrices, mas se demora respecto a suss pares. El mas rapido de todos los casos seria assume "POS" esta opcion baja el tiempo de solucion, aunque el tiempo es parecido con el resto de las opciones(sin considerar caso 1).
+
