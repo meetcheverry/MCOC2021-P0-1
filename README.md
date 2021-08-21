@@ -115,4 +115,4 @@
 
 ### Graficos comparativos con distintos metodos utilizando tipo de datos: Double
 
-![](/entrega_4/Grafico_solve_Double_1.png)
+![](/Grafico_solve_Double_1.png)
