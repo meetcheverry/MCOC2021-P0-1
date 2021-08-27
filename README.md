@@ -129,7 +129,9 @@
 * En este caso los metodos mas veloces son: Parametros iniciales, driver=evr con y sin sobre escribir la matriz A, driver= evd con y sin overwrite. Por ultimo los casos mas lentos serian driver=evx y ev con y sin overwrite. En este caso no se noto diferencia al comparar con y sin sobre escribir la matriz, lo que no es muy confiable ya que al sobre escribir se deberia ahorar memoria y quizas con eso disminuir el timepo.
 
 # Matrices dispersas y complejidad computacional
+### Matriz Llena
 ![](/Entrega%205/Graf_LLena.png)
+### Matriz Dispersa
 ![](/Entrega%205/Graf_Dispersa.png)
 * Como se puede ver en los gráficos, la diferencia entre una matriz llena y dispersa son insignificantes. Se obtienen resultados practicamente iguales en terminos de ensambraje de la matriz A y tambien en en solucion de inversa de A. Lo que si es notorio es la diferencia de tiempo al momento de solucionar el inv(A) respecto al tiempo que toma en crear la Matriz.
 
