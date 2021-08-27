@@ -128,32 +128,33 @@
 ### Comentarios V. propios
 * En este caso los metodos mas veloces son: Parametros iniciales, driver=evr con y sin sobre escribir la matriz A, driver= evd con y sin overwrite. Por ultimo los casos mas lentos serian driver=evx y ev con y sin overwrite. En este caso no se noto diferencia al comparar con y sin sobre escribir la matriz, lo que no es muy confiable ya que al sobre escribir se deberia ahorar memoria y quizas con eso disminuir el timepo.
 
+# Matrices dispersas y complejidad computacional
+![](/Entrega%205/Graf_LLena.png)
+![](/Entrega%205/Graf_Dispersa.png)
+* Como se puede ver en los gráficos, la diferencia entre una matriz llena y dispersa son insignificantes. Se obtienen resultados practicamente iguales en terminos de ensambraje de la matriz A y tambien en en solucion de inversa de A. Lo que si es notorio es la diferencia de tiempo al momento de solucionar el inv(A) respecto al tiempo que toma en crear la Matriz.
 
-
-
-
-# CODIGO LAPLAcIANA
+# CODIGO LAPLACIANA
 ```
-   import numpy as np
-   from numpy import float32,zeros
+import numpy as np
+from numpy import float32,zeros
 
-   def laplaciana(N, dtype=float32):
-       A=zeros((N,N), dtype=dtype)
+def laplaciana(N, dtype=float32):
+    A=zeros((N,N), dtype=dtype)
     
-       for i in range(N):
-           for j in range(N):
-               if i==j:
-                   A[i,j]=2
-               if i+1==j:
-                   A[i,j]=-1
-               if i-1==j:
-                   A[i,j]=-1
-       return A
+    for i in range(N):
+        for j in range(N):
+            if i==j:
+                A[i,j]=2
+            if i+1==j:
+                A[i,j]=-1
+            if i-1==j:
+                A[i,j]=-1
+    return A
 
-   def laplaciana_llena(N,t=np.float32):
-       m=np.eye(N,N,dtype=t)-np.eye(N,N,1,dtype=t)
-       return m+m.T
-   def laplaciana_dispersa(N,t=np.float32):
-       m=np.eye(N,N,dtype=t)-np.eye(N,N,1,dtype=t)
-       return m+m.T 
+def laplaciana_llena(N,t=np.float32):
+    m=np.eye(N,N,dtype=t)-np.eye(N,N,1,dtype=t)
+    return m+m.T
+def laplaciana_dispersa(N,t=np.float32):
+    m=np.eye(N,N,dtype=t)-np.eye(N,N,1,dtype=t)
+    return m+m.T 
 ```
