@@ -133,7 +133,7 @@
 
 
 # CODIGO LAPLAcIANA
-
+'''
    import numpy as np
    from numpy import float32,zeros
 
@@ -156,3 +156,4 @@
    def laplaciana_dispersa(N,t=np.float32):
        m=np.eye(N,N,dtype=t)-np.eye(N,N,1,dtype=t)
        return m+m.T 
+'''
