@@ -134,25 +134,25 @@
 
 # CODIGO LAPLAcIANA
 
- import numpy as np
- from numpy import float32,zeros
+   import numpy as np
+   from numpy import float32,zeros
 
- def laplaciana(N, dtype=float32):
-     A=zeros((N,N), dtype=dtype)
+   def laplaciana(N, dtype=float32):
+       A=zeros((N,N), dtype=dtype)
     
-     for i in range(N):
-         for j in range(N):
-             if i==j:
-                 A[i,j]=2
-             if i+1==j:
-                 A[i,j]=-1
-             if i-1==j:
-                 A[i,j]=-1
-     return A
+       for i in range(N):
+           for j in range(N):
+               if i==j:
+                   A[i,j]=2
+               if i+1==j:
+                   A[i,j]=-1
+               if i-1==j:
+                   A[i,j]=-1
+       return A
 
- def laplaciana_llena(N,t=np.float32):
-     m=np.eye(N,N,dtype=t)-np.eye(N,N,1,dtype=t)
-     return m+m.T
- def laplaciana_dispersa(N,t=np.float32):
-     m=np.eye(N,N,dtype=t)-np.eye(N,N,1,dtype=t)
-     return m+m.T 
+   def laplaciana_llena(N,t=np.float32):
+       m=np.eye(N,N,dtype=t)-np.eye(N,N,1,dtype=t)
+       return m+m.T
+   def laplaciana_dispersa(N,t=np.float32):
+       m=np.eye(N,N,dtype=t)-np.eye(N,N,1,dtype=t)
+       return m+m.T 
