@@ -174,11 +174,11 @@ Se utilizo sp.linalg solve para el caso de matriz Dispersa.
 Se puede notar que al usar matrices dispersas, el tiempo de ensamblado se mantiene parecido a N2. En el caso de "tiempo de solucion" se nota una gran diferencia. Para matrices Dispersas la complejidad es de lineal , matrices llenas tienen una complejidad cuadratica.
 
 ## Complejidad algorítmica de INV(A)
-### Solve con matriz llena
+### INV con matriz llena
 ![](/Entrega%206/Graf_INV(a)_LLENA.png)
 Se utilizo np.linalg.inv(A) para el caso de matriz llena.
 
-### Solve con matriz Dispersa
+### INV con matriz Dispersa
 ![](/Entrega%206/Graf_INV(A)_Dispersa.png)
 Se utilizo sp.sparse.linalg.inv(A) para el caso de matriz dispersa.
 
