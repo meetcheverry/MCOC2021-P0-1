@@ -183,3 +183,5 @@ Se utilizo np.linalg.inv(A) para el caso de matriz llena.
 Se utilizo sp.sparse.linalg.inv(A) para el caso de matriz dispersa.
 
 Se puede notar que al usar matrices dispersas, el tiempo de ensamblado se mantiene parecido a N2. En el caso de "tiempo de solucion" se nota una pequeña diferencia. Para matrices Dispersas la complejidad mas lineal qeu cuadratica, tambien su comportamiento es mas prolijo teniendo menos inperfecciones en los tiempos. Matrices llenas tienen una complejidad mas similar a la cuadratica.
+Segun el comportamiento final, el comportamiento final de la dispersa es de complejidad lineal, mientras que las llenas son de complejidad cuadratica. 
+En mi casa todas las corridas coincidian, mas aun cuando se utilizaban matrices Dispersas.
