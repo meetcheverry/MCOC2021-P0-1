@@ -160,3 +160,26 @@ def laplaciana_dispersa(N,t=np.float32):
     m=np.eye(N,N,dtype=t)-np.eye(N,N,1,dtype=t)
     return m+m.T 
 ```
+# Entrega 6
+
+## Complejidad algorítmica de A@B
+### Solve con matriz llena
+![](/Entrega%206/Graf_A@B_llena.png)
+Se utilizo sp.linalg solve para el caso de matriz llena.
+
+### Solve con matriz Dispersa
+![](/Entrega%206/Graf_A@B_Dispersa.png)
+Se utilizo sp.linalg solve para el caso de matriz Dispersa.
+
+Se puede notar que al usar matrices dispersas, el tiempo de ensamblado se mantiene parecido a N2. En el caso de "tiempo de solucion" se nota una gran diferencia. Para matrices Dispersas la complejidad es de lineal , matrices llenas tienen una complejidad cuadratica.
+
+## Complejidad algorítmica de INV(A)
+### Solve con matriz llena
+![](/Entrega%206/Graf_INV(a)_LLENA.png)
+Se utilizo np.linalg.inv(A) para el caso de matriz llena.
+
+### Solve con matriz Dispersa
+![](/Entrega%206/Graf_INV(A)_Dispersa.png)
+Se utilizo sp.sparse.linalg.inv(A) para el caso de matriz dispersa.
+
+Se puede notar que al usar matrices dispersas, el tiempo de ensamblado se mantiene parecido a N2. En el caso de "tiempo de solucion" se nota una pequeña diferencia. Para matrices Dispersas la complejidad mas lineal qeu cuadratica, tambien su comportamiento es mas prolijo teniendo menos inperfecciones en los tiempos. Matrices llenas tienen una complejidad mas similar a la cuadratica.
